@@ -300,7 +300,7 @@ model Answer {
 }
 
 model AnswerV2 {
-  id        Int      @id @default(autoincrement())
+  id        Int      @id @default(sequence())
   createdAt DateTime @default(now())
   blockId   String
   content   String
